@@ -85,8 +85,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 source $HOME/.rvm/scripts/rvm
 alias update='source ~/.bashrc'
+alias trip='cd ~/Desktop/tripping'
+alias tripping='cd ~/Desktop/tripping'
+alias vo='cd ~/Desktop/tripping/voxophone'
 alias vox='cd ~/Desktop/tripping/voxophone'
 alias voxi='cd ~/Desktop/tripping/voxophone/infra'
+alias sound='cd ~/Desktop/tripping/soundcheck'
+alias snd='cd ~/Desktop/tripping/soundcheck'
+alias soundcheck='cd ~/Desktop/tripping/soundcheck'
 
 
 alias bashrc='vim ~/.bashrc'
@@ -107,7 +113,6 @@ alias vmv='voxi; vagrant ssh; cd voxophone'
 alias dev=vm
 alias nn='npm start'
 alias ns='npm start'
-alias bag='cd ~/Desktop/tripping/bagpipes/serp;npm run start:dev'
 
 alias lint='~/Desktop/tripping/bagpipes/./script.sh paths.txt'
 alias lintpaths='vim ~/Desktop/tripping/bagpipes/paths.txt'
@@ -118,12 +123,18 @@ alias lsdir='ls -d */'
 
 export PATH="/Users/josh/.erlangInstaller/19.3/bin:$PATH"
 
+alias chef='cd ~/Desktop/tripping/chef'
 alias blitz='cd ~/Desktop/tripping/blitz'
 alias bag='cd ~/Desktop/tripping/bagpipes'
+alias serp='cd ~/Desktop/tripping/bagpipes/serp'
 alias bagpipes='cd ~/Desktop/tripping/bagpipes'
+alias bagstage='serp;./bin/deploy staging'
+alias bagprod='serp;./bin/deploy production'
+
 export ERLASTIC_SEARCH_JSON_MODULE='blitz_json'
 alias bsgvm='cd ~/Desktop/code/bsg; ssh -i merp.pem  ubuntu@ec2-54-153-7-36.us-west-1.compute.amazonaws.com'
 alias bsg='cd ~/Desktop/bsg_tracker'
+alias code='cd ~/Desktop/code'
 
 
 
@@ -141,8 +152,6 @@ alias z='source ~/.zshrc'
 alias zz='vim ~/.zshrc;source ~/.zshrc'
 
 alias diff='clear;git diff'
-alias d='vim ~/Desktop/diff.txt'
-alias diff='git diff --color > ~/Desktop/diff.txt; vim ~/Desktop/diff.txt'
 alias st='git st'
 alias got='git'
 alias get='git'
@@ -150,7 +159,10 @@ alias g='git'
 alias fetch='git fetch --all'
 alias f='git fetch --all'
 alias check='clear;git diff HEAD~1 HEAD'
+alias push='git push --set-upstream origin'
+alias master='git co master'
 
+alias m='blitz;make'
 alias md='blitz;make debug'
 alias mc='blitz;make compile'
 alias mdf='blitz;make compile; make debug'
@@ -182,6 +194,7 @@ alias bs='blitz; cd src'
 alias crl="curl localhost:8181/search -XGET -d '{}' -v"
 
 alias ml="cd ~/Desktop/numerical-linear-algebra/nbs;jupyter notebook"
+alias tf="cd ~/Desktop/code/models/tutorials/image/imagenet"
 alias jy="cd ~/Desktop/numerical-linear-algebra/nbs;jupyter notebook"
 
 function crldemo {
@@ -195,4 +208,11 @@ function crlnew {
     curl -XGET -d "{'locationString': { 'query': 'San Francisco, CA'}}" localhost:8181/search -v
 }
 
-alias dd='date +%r'
+
+alias blah='function _blah(){ echo "First: $1"; echo "Second: $2"; };_blah'
+
+alias curlstage='function _curlstage(){ curl -H "Cookie: HAID=$1" -X GET -d '{"searchId":"$2"}' https://staging.tripping.com/rt/partners_in_search; };_curlstage'
+
+
+alias notify='say done'
+alias d='date'
