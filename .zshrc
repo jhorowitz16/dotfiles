@@ -174,6 +174,8 @@ alias master='git co master'
 alias stash='git stash'
 alias gsa='git stash apply'
 alias gl='git log'
+alias pull='git pull'
+alias pu='git pull'
 
 alias m='blitz;make'
 alias md='blitz;make debug'
@@ -230,3 +232,14 @@ alias curlstage='function _curlstage(){ curl -H "Cookie: HAID=$1" -X GET -d '{"s
 
 alias notify='say done'
 alias d='date'
+
+
+alias eslint='npm run eslint'
+alias jslint='npm run eslint'
+alias es='npm run eslint'
+alias js='npm run eslint'
+alias csslint='npm run scss-lint'
+alias scsslint='npm run scss-lint'
+alias css='npm run scss-lint'
+alias scss='npm run scss-lint'
+alias scsslint='npm run scss-lint'
