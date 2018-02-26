@@ -89,6 +89,7 @@ alias trip='cd ~/Desktop/tripping'
 alias tripping='cd ~/Desktop/tripping'
 alias v='cd ~/Desktop/tripping/voxophone'
 alias vo='cd ~/Desktop/tripping/voxophone'
+alias vx='cd ~/Desktop/tripping/voxophone'
 alias vox='cd ~/Desktop/tripping/voxophone'
 alias voxi='cd ~/Desktop/tripping/voxophone/infra'
 alias sound='cd ~/Desktop/tripping/soundcheck'
@@ -176,6 +177,9 @@ alias gsa='git stash apply'
 alias gl='git log'
 alias pull='git pull'
 alias pu='git pull'
+alias gsd='git stash drop'
+alias gstd='git stash drop'
+alias gsdp='git stash drop'
 
 alias m='blitz;make'
 alias md='blitz;make debug'
@@ -192,8 +196,8 @@ alias mia='blitz;make auto_indent'
 alias mai='blitz;make auto_indent'
 alias mi='blitz;make auto_indent'
 
-alias vv='vagrant up;vm'
-alias vu='vagrant up'
+alias vv='voxi;vagrant up;vm'
+alias vu='voxi;vagrant up'
 
 alias blitzlog='tail -f /var/log/blitz/current'
 alias blitzstop='sudo service blitz stop'
@@ -243,3 +247,18 @@ alias scsslint='npm run scss-lint'
 alias css='npm run scss-lint'
 alias scss='npm run scss-lint'
 alias scsslint='npm run scss-lint'
+
+alias riot='cd ~/Desktop/code/RiotTesting'
+alias res='cd ~/Desktop/code/personal/resume'
+alias kms='cd ~/Desktop/code/RiotTesting/KMS/kms-app'
+alias chat='cd ~/Desktop/code/chatbot'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+alias unity='cd ~/../Shared/Unity/PongV1'
+alias twitch='cd ~/Desktop/code/personal/ClickbotTesting'
+alias tutor='cd ~/Desktop/tutorials'
+alias tutorials='cd ~/Desktop/tutorials'
+alias ios='cd ~/Desktop/IOS'
